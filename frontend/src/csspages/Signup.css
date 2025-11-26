@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+/* global variables */
+:root {
+    --darkgreen: #002500;
+    --desertsand: #EDCBB1;
+    --paynegrey: #577590;
+    --raisen-black: #212738;
+    --vivid-skyblue: #57C4E5;
+    --chinese-violet: #685F74;
+    --darkviolet: #210124;
+    --silver: #BFC0C0;
+    --lavender: #D8E1FF;
+}
+
+.signup-container {
+    height: 53vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--lavender);
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+.signup-container .signup-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    background: var(--vivid-skyblue);
+    border-radius: 0.5rem;
+    transition: all 0.2s linear;
+}
+
+.signup-header:hover {
+    background: var(--paynegrey);
+}
+
+.signup-header #signup-header {
+    font-size: 2rem;
+    font-style: bold;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* fullname feild */
+
+.signup-container .fullname {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    height: 2.5rem;
+}
+
+.fullname input {
+    height: 2.5rem;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-weight: 600;
+    border: 0.1rem solid var(--darkviolet);
+    border-radius: 0.2rem;
+    background: var(--lavender);
+
+}
+
+.fullname input:focus {
+    border-color: var(--darkgreen);
+}
+
+.fullname label {
+    position: absolute;
+    left: 0.4rem;
+    font-weight: 600;
+    transition: all 0.3s linear;
+}
+
+.fullname input:focus+label,
+.fullname input:not(:placeholder-shown)+label {
+    top: -0.6rem;
+    background: var(--lavender);
+    padding: 0 0.5rem;
+    border-radius: 0.2rem;
+    color: var(--darkgreen);
+}
+
+/* email feild */
+
+.signup-container .email {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    height: 2.5rem;
+}
+
+.email input {
+    height: 2.5rem;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-weight: 600;
+    border: 0.1rem solid var(--darkviolet);
+    border-radius: 0.2rem;
+    background: var(--lavender);
+
+}
+
+.email input:focus {
+    border-color: var(--darkgreen);
+}
+
+.email label {
+    position: absolute;
+    left: 0.4rem;
+    font-weight: 600;
+    transition: all 0.3s linear;
+}
+
+.email input:focus+label,
+.email input:not(:placeholder-shown)+label {
+    top: -0.6rem;
+    background: var(--lavender);
+    padding: 0 0.5rem;
+    border-radius: 0.2rem;
+    color: var(--darkgreen);
+}
+
+
+/* contact feilds */
+
+.signup-container .contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    height: 2.5rem;
+}
+
+.contact input {
+    height: 2.5rem;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-weight: 600;
+    border: 0.1rem solid var(--darkviolet);
+    border-radius: 0.2rem;
+    background: var(--lavender);
+
+}
+
+.contact input:focus {
+    border-color: var(--darkgreen);
+}
+
+.contact label {
+    position: absolute;
+    left: 0.4rem;
+    font-weight: 600;
+    transition: all 0.3s linear;
+}
+
+.contact input:focus+label,
+.contact input:not(:placeholder-shown)+label {
+    top: -0.6rem;
+    background: var(--lavender);
+    padding: 0 0.5rem;
+    border-radius: 0.2rem;
+    color: var(--darkgreen);
+}
+
+/* password feild */
+
+.signup-container .password {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    height: 2.5rem;
+}
+
+.password input {
+    height: 2.5rem;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-weight: 600;
+    border: 0.1rem solid var(--darkviolet);
+    border-radius: 0.2rem;
+    background: var(--lavender);
+
+}
+
+.password input:focus {
+    border-color: var(--darkgreen);
+}
+
+.password label {
+    position: absolute;
+    left: 0.4rem;
+    font-weight: 600;
+    transition: all 0.3s linear;
+}
+
+.password input:focus+label,
+.password input:not(:placeholder-shown)+label {
+    top: -0.6rem;
+    background: var(--lavender);
+    padding: 0 0.5rem;
+    border-radius: 0.2rem;
+    color: var(--darkgreen);
+}
+
+.password button {
+    position: absolute;
+    height: 2.5rem;
+    width: 3rem;
+    border: 0.1rem solid black;
+    border-radius: 0.2rem;
+    right: 0rem;
+    font-size: larger;
+    background: var(--lavender);
+}
+
+.password button:hover {
+    background: var(--paynegrey);
+}
+
+/* confirm password feilds */
+
+.signup-container .confirm-password {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    height: 2.5rem;
+}
+
+.confirm-password input {
+    height: 2.5rem;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-weight: 600;
+    border: 0.1rem solid var(--darkviolet);
+    border-radius: 0.2rem;
+    background: var(--lavender);
+
+}
+
+.confirm-password input:focus {
+    border-color: var(--darkgreen);
+}
+
+.confirm-password label {
+    position: absolute;
+    left: 0.4rem;
+    font-weight: 600;
+    transition: all 0.3s linear;
+}
+
+.confirm-password input:focus+label,
+.confirm-password input:not(:placeholder-shown)+label {
+    top: -0.6rem;
+    background: var(--lavender);
+    padding: 0 0.5rem;
+    border-radius: 0.2rem;
+    color: var(--darkgreen);
+}
+
+.confirm-password button {
+    position: absolute;
+    height: 2.5rem;
+    width: 3rem;
+    border: 0.1rem solid black;
+    border-radius: 0.2rem;
+    right: 0rem;
+    font-size: larger;
+    background: var(--lavender);
+}
+
+.confirm-password button:hover {
+    background: var(--paynegrey);
+}
+
+/* register button feilds */
+
+.signup-container .register{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    height: 2.5rem;
+}
+
+.register button{
+    height:2rem;
+    width:8rem;
+    border:0.1rem solid var(--vivid-skyblue);
+    border-radius: 0.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: larger;
+    background: var(--vivid-skyblue);
+    transition:all 0.2s linear;
+}
+
+.register button:hover{
+    border-color: var(--paynegrey);
+    background: var(--paynegrey);
+}

@@ -1,0 +1,25 @@
+.liked-movies{
+    box-sizing: border-box;
+    height: 98vh;
+    width: 99vw;
+    background:rgb(2, 2, 54);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 0.5rem;
+} 
+
+.liked-movies .single-movie {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2, 59, 124);
+    box-sizing: border-box;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    position: relative;
+    font-size: medium;
+
+}

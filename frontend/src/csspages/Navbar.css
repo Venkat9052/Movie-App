@@ -1,0 +1,49 @@
+
+
+:root {
+    --darkgreen: #002500;
+    --desertsand: #EDCBB1;
+    --paynegrey: #577590;
+    --raisen-black: #212738;
+    --vivid-skyblue: #57C4E5;
+    --chinese-violet: #685F74;
+    --darkviolet: #210124;
+    --silver: #BFC0C0;
+    --lavender: #D8E1FF;
+}
+
+.Nav-container{
+    height:4rem;
+    width:99vw;
+    background:rgb(4, 4, 124);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Nav-container .Nav-items{
+    height:fit-content;
+    width:fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8rem;
+}
+
+.Nav-items .item{
+    height:2.5rem;
+    width:6rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:cyan;
+    text-decoration: none;
+    font-size: larger;
+    transition:all 0.3s linear;
+}
+
+.Nav-items .item:hover{
+    color:var(--lavender);
+    border-bottom: 2px solid cyan;
+}
+
